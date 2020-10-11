@@ -2,7 +2,11 @@ package com.example.cadalunos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+
+import com.orhanobut.hawk.Hawk;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -10,5 +14,10 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        Hawk.init(this).build();
+    }
+
+    public void Save(View view) {
+        Hawk.put("have_register", true);
     }
 }
