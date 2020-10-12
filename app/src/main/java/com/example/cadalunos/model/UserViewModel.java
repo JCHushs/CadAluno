@@ -5,6 +5,7 @@ import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+
 public class UserViewModel extends AndroidViewModel {
     public UserRepository userRepository;
     public LiveData<User> user;

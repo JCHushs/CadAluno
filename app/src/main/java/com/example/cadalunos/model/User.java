@@ -18,6 +18,9 @@ import androidx.room.PrimaryKey;
             this.password = password;
         }
 
+        public User() {
+        }
+
         public int getId() {
             return id;
         }
