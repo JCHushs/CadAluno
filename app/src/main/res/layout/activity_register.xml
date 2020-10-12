@@ -6,13 +6,13 @@
     android:background="@drawable/gradient_background"
     android:layout_height="match_parent"
     tools:context=".ui.RegisterActivity">
-    <TextView
+
+    <ImageView
         android:id="@+id/TextViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cadastro Alunos"
-        android:textSize="14pt"
         android:layout_marginTop="110dp"
+        android:src="@drawable/ic_person_add"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
@@ -24,6 +24,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="95dp"
         android:hint="Name"
+        android:drawableLeft="@drawable/ic_person"
         android:textColor="#ffff"
         app:layout_constraintTop_toBottomOf="@+id/TextViewTitle"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -37,6 +38,7 @@
         android:layout_marginTop="14dp"
         android:hint="User"
         android:textColor="#ffff"
+        android:drawableLeft="@drawable/ic_face"
         app:layout_constraintTop_toBottomOf="@+id/EditTextName"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
@@ -47,6 +49,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="14dp"
+        android:drawableLeft="@drawable/ic_email"
         android:hint="Email"
         android:textColor="#ffff"
         app:layout_constraintTop_toBottomOf="@+id/EditTextUser"
@@ -60,6 +63,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="14dp"
         android:hint="Password"
+        android:drawableLeft="@drawable/ic_lock"
         android:inputType="textPassword"
         android:textColor="#ffff"
         app:layout_constraintTop_toBottomOf="@+id/EditTextEmail"
@@ -75,6 +79,7 @@
         android:hint=" Confirm Password"
         android:inputType="textPassword"
         android:textColor="#ffff"
+        android:drawableLeft="@drawable/ic_lock"
         app:layout_constraintTop_toBottomOf="@+id/EditTextPassword"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>

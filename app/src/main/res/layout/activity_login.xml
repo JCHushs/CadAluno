@@ -102,6 +102,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/ViewRight_divider"
         app:layout_constraintRight_toRightOf="@+id/ViewLeft_Divider"/>
 
+
     <View
         android:id="@+id/ViewLeft_Divider"
         android:layout_width="0dp"
@@ -114,6 +115,8 @@
         app:layout_constraintTop_toTopOf="@+id/TextViewOtherWays"
         tools:layout_editor_absoluteY="112dp"
         tools:layout_editor_absoluteX="243dp"/>
+
+
 
 
 
