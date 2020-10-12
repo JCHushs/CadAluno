@@ -1,4 +1,4 @@
-package com.example.cadalunos;
+package com.example.cadalunos.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.cadalunos.R;
 import com.orhanobut.hawk.Hawk;
 
 public class LoginActivity extends AppCompatActivity {

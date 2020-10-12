@@ -1,4 +1,4 @@
-package com.example.cadalunos;
+package com.example.cadalunos.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.cadalunos.R;
 import com.orhanobut.hawk.Hawk;
 
 public class RegisterActivity extends AppCompatActivity {
