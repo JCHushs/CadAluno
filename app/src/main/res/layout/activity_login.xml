@@ -51,7 +51,7 @@
         android:layout_marginLeft="110dp"
         android:layout_marginTop="14dp"
         android:onClick="Main"
-        android:text="SING IN"
+        android:text="Sign IN"
         app:layout_constraintTop_toBottomOf="@+id/EditTextPassword"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
