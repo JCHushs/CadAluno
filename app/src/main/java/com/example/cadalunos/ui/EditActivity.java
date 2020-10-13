@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -16,7 +15,7 @@ import com.example.cadalunos.model.User;
 import com.example.cadalunos.model.UserViewModel;
 import com.orhanobut.hawk.Hawk;
 
-public class RegisterActivity extends AppCompatActivity {
+public class EditActivity extends AppCompatActivity {
 
     private UserViewModel userViewModel;
     private User currentUser;
@@ -25,11 +24,10 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText editTextEmail;
     private EditText editTextPassword;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_edit);
         Hawk.init(this).build();
 
         editTextName = findViewById(R.id.EditTextName);
@@ -47,8 +45,6 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
-
-
 
     private void updateView(User user){
         if(user != null && user.getId() > 0){
@@ -69,7 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
         currentUser.setEmail(editTextEmail.getText().toString());
         currentUser.setPassword(editTextPassword.getText().toString());
         userViewModel.insert(currentUser);
-        Toast.makeText(this, "Usuario criado com sucesso", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Salvo com sucesso", Toast.LENGTH_SHORT).show();
         Hawk.put("have_register", true);
 
     }

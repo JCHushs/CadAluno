@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
             case R.id.edit:
-                Intent intent = new Intent(this,RegisterActivity.class);
+                Intent intent = new Intent(this,EditActivity.class);
                 startActivity(intent);
             case R.id.exit:
                 finish();

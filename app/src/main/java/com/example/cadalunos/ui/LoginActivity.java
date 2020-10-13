@@ -35,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
             Block();
         }
     }
+
     private void Block(){
         buttonlogin.setEnabled(false);
         buttonlogin.setBackgroundColor(getResources().getColor(R.color.gray));
